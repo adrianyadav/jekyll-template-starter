@@ -1,0 +1,26 @@
+.header {
+	width: 100%;
+	max-width: $site-width;
+	margin: 0 auto;
+	display: grid;
+	grid-row-gap: 1.5rem;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr auto;
+	justify-content: left;
+	padding-top: 6rem;
+	padding-bottom: 2rem;
+	border-bottom: $default-border;
+
+	@include respond(tab-land) {
+		padding: $padding-tab;
+	}
+
+	@include respond(phone) {
+		grid-template-columns: 1fr;
+		padding-top: 4rem;
+		padding-bottom: 2rem;
+		&-text {
+			justify-self: flex-start;
+		}
+	}
+}

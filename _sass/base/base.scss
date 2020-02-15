@@ -1,0 +1,68 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	// This defines what 1rem is
+	font-size: 62.5%;
+}
+
+body {
+	box-sizing: border-box;
+}
+
+ul,
+ol {
+	margin-bottom: $default-margin-bottom;
+	margin-left: 1.6rem;
+
+	li {
+		&:not(:last-child) {
+			padding-bottom: 0.5rem;
+		}
+	}
+}
+
+a {
+	color: #999;
+	text-decoration: none;
+	transition: border-bottom 0.4s;
+	border-bottom: 1px solid transparent;
+	text-decoration: none;
+	&:link,
+	&:visited {
+		color: $link-color;
+	}
+	&:hover {
+		border-bottom: 1px solid $link-color;
+	}
+}
+
+blockquote {
+	p {
+		font-weight: $medium-weight;
+		font-size: 1.9rem;
+	}
+
+	span {
+		display: block;
+		font-style: normal;
+		font-weight: bold;
+		margin-top: 1rem;
+	}
+}
+
+.container {
+	max-width: $site-width;
+	margin: 0 auto;
+}
+
+.main {
+	display: grid;
+	max-width: $site-width;
+	margin: 0 auto;
+}

@@ -1,0 +1,39 @@
+.nav {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	@include respond(phone) {
+		justify-self: flex-start;
+	}
+	&-list {
+		list-style-type: none;
+		display: grid;
+		grid-template-rows: 1fr;
+		grid-template-columns: auto auto auto;
+		justify-content: center;
+		align-self: center;
+		grid-column-gap: 2rem;
+		margin: 0;
+	}
+
+	&-item {
+		display: inline-block;
+	}
+
+	&-link {
+		transition: $default-transition;
+		font-weight: $medium-weight;
+		line-height: 1.8rem;
+		&:link,
+		&:visited {
+			color: $nav-link-color;
+			border-bottom: 3px solid transparent;
+		}
+		&:hover {
+			color: $nav-link-hover-color;
+			border-bottom: 3px solid $nav-link-hover-color;
+		}
+		text-decoration: none;
+		font-size: 1.8rem;
+	}
+}

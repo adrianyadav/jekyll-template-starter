@@ -1,0 +1,15 @@
+.article {
+	display: grid;
+	grid-row-gap: 1.5rem;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr;
+	list-style-type: none;
+	border-bottom: $default-border;
+	padding-top: 2rem;
+	padding-bottom: 4rem;
+	max-width: 70rem;
+	font-size: $default-font-size;
+	@include respond(tab-land) {
+		padding: $padding-tab;
+	}
+}

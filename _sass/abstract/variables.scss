@@ -1,0 +1,52 @@
+// COLOURS
+$default-font-color: #3b3d41;
+$link-color: #0277bd;
+
+// POST
+$post-title-color: #222;
+$post-title-hover-color: #999;
+
+// NAV COLOURS
+$nav-link-color: #545454;
+$nav-link-hover-color: #0b0c0c;
+$nav-link-current-color: #0b0c0c;
+
+// Footer
+$footer-background-color: #333;
+
+// BORDERS
+$default-border: 1px solid #eee;
+
+// PADDING
+
+$padding-tab: 4rem;
+
+// TRANSITIONS
+$default-transition: all 0.3s;
+$easeInSine: all 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+$easeOutQuad: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+// GRID
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;
+
+// FONT
+$default-font-family: 'Nunito Sans', sans-serif;
+$default-font-size: 1.8rem;
+$default-font-color: #3b3d41;
+$medium-weight: 400;
+$heavy-weight: 700;
+
+// MEDIA QUERIES
+$phone: 37.5em; //600 px
+$tab-port: 56.25em; //900px;
+$tab-land: 75em; //1200px;
+$big-desktop: 112.5em; //1800px;
+
+$site-width: 100rem;
+
+// MARGINS
+$default-margin-top: 3rem;
+$default-margin-bottom: 1.5rem;
