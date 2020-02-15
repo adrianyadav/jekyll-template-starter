@@ -1,0 +1,18 @@
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+date_format: "%d %b %Y"
+
+title: "Adrian Yadav | Developer"
+description: "A simple blog"
+
+# Build settings
+theme: minima
+
+future: true
+
+plugins:
+  - jekyll-feed
+
+sass:
+  sass_dir: _sass
